@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <canvas class="background"></canvas>
+    <div class="the-button-container">
+      <button class="the-button" id="theButton">BUTTNS</button>
+    </div>
+    <div class="options-container">
+      <div id="colorDiv" class="options-box">
+        <div id="fontColorContainer" class="sub-container">
+          <div class="options-box-title">Font Color</div>
+          <div class="options-box-value" id="font-color-value">null</div>
+        </div>
+        <div id="backgroundContainer" class="sub-container">
+          <div class="options-box-title">Background Color</div>
+          <div class="options-box-value" id="background-color-value">null</div>
+        </div>
+      </div>
+      <div id="borderDiv" class="options-box">
+        <div class="options-box-title">Border Options</div>
+        <div id="borderRadiusContainer" class="sub-container">
+          <div class="options-box-label">Radius</div>
+          <div class="options-box-value" id="border-radius-value">0px</div>
+        </div>
+        <div id="borderWidthContainer" class="sub-container">
+          <div class="options-box-label">Width</div>
+          <div class="options-box-value" id="border-width-value">0px</div>
+        </div>
+        <div id="borderColorContainer" class="sub-container">
+          <div class="options-box-label">Color</div>
+          <div class="options-box-value" id="border-color-value">0px</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./colorOptions.js"></script>
+  <script src="./borderOptions.js"></script>
+  <script src="./../node_modules/particlesjs/dist/particles.min.js"></script>
+</html>
