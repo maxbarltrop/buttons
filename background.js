@@ -9,10 +9,3 @@ let defaultData = {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set(defaultData);
 });
-
-chrome.action.onClicked.addListener((tab) => {
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ["buttonify.js"],
-  });
-});

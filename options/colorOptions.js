@@ -34,14 +34,25 @@ const makeColorInput = (color) => {
   return colorInput;
 };
 
-const makeAlert = () => alert("You clicked the button");
+const buttonify = async () => {
+  let queryOptions = { active: true, currentWindow: true };
+  let [tab] = await chrome.tabs.query(queryOptions);
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: ["buttonify.js"],
+  });
+  var isOptionsPage = window.matchMedia("(min-width: 800px)");
+  if (isOptionsPage.matches) {
+    alert("You clicked the button");
+  }
+};
 
 const constructColorPicker = () => {
   chrome.storage.sync.get((data) => {
     let { color, backgroundColor } = data;
     colorOptionsTheButton.style.color = color;
     colorOptionsTheButton.style.backgroundColor = backgroundColor;
-    colorOptionsTheButton.addEventListener("click", makeAlert);
+    colorOptionsTheButton.addEventListener("click", buttonify);
     colorValueElem.innerHTML = `${color}`;
     backgroundValueElem.innerHTML = `${backgroundColor}`;
     let fontColorInput = makeColorInput(color);

@@ -2,35 +2,43 @@
 <html>
   <head>
     <link rel="stylesheet" href="./options.css" />
+    <title>Buttns Options</title>
   </head>
   <body>
     <canvas class="background"></canvas>
+    <div class="popup-header">BUTTNS</div>
     <div class="the-button-container">
-      <button class="the-button" id="theButton">BUTTNS</button>
+      <button class="the-button" id="theButton">
+        <div class="icon-wrapper"><img class="icon" id="iBig" src="./../images/buttonPress.svg"></img><span class="button-text-small">A</span></div><span class="button-text">BUTTNS</span>
+      </button>
+    </div>
+    <div class="about">
+      Buttns applies your styles defined here to any element with the <code>button</code> tag that isn't overwritten by a higher priority style.
+
     </div>
     <div class="options-container">
       <div id="colorDiv" class="options-box">
         <div id="fontColorContainer" class="sub-container">
-          <div class="options-box-title">Font Color</div>
+          <div class="options-box-title">Font Color<div class="icon-wrapper"><img class="icon" id="iSmall" src="./../images/colorWheel.svg"></img></div></div>
           <div class="options-box-value" id="font-color-value">null</div>
         </div>
         <div id="backgroundContainer" class="sub-container">
-          <div class="options-box-title">Background Color</div>
+          <div class="options-box-title">Background Color<div class="icon-wrapper"><img class="icon" id="iSmall" src="./../images/paintBucket.svg"></img></div></div>
           <div class="options-box-value" id="background-color-value">null</div>
         </div>
       </div>
       <div id="borderDiv" class="options-box">
         <div class="options-box-title">Border Options</div>
         <div id="borderRadiusContainer" class="sub-container">
-          <div class="options-box-label">Radius</div>
+          <div class="options-box-label">Radius<div class="icon-wrapper"><img class="icon" id="iSmaller" src="./../images/radius.svg"></img></div></div>
           <div class="options-box-value" id="border-radius-value">0px</div>
         </div>
         <div id="borderWidthContainer" class="sub-container">
-          <div class="options-box-label">Width</div>
+          <div class="options-box-label">Width<div class="icon-wrapper"><img class="icon" id="iSmaller" src="./../images/width.svg"></img></div></div>
           <div class="options-box-value" id="border-width-value">0px</div>
         </div>
         <div id="borderColorContainer" class="sub-container">
-          <div class="options-box-label">Color</div>
+          <div class="options-box-label">Color<div class="icon-wrapper"><img class="icon" id="iSmaller" src="./../images/brush.svg"></img></div></div>
           <div class="options-box-value" id="border-color-value">0px</div>
         </div>
       </div>
