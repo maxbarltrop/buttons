@@ -1,6 +1,6 @@
 {
   "name": "Buttns",
-  "description": "Extension to stylize all buttons easily",
+  "description": "Extension to stylize all buttons",
   "version": "1.0.2",
   "manifest_version": 3,
   "background": {
@@ -14,7 +14,7 @@
       "48": "/images/button64.png",
       "128": "/images/button128.png"
     },
-    "default_popup": "options/options.html"
+    "default_popup": "options.html"
   },
   "icons": {
     "16": "/images/button16.png",
@@ -22,5 +22,5 @@
     "48": "/images/button64.png",
     "128": "/images/button128.png"
   },
-  "options_page": "options/options.html"
+  "options_page": "options.html"
 }
